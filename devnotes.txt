@@ -1,0 +1,5 @@
+To make hosting ion git 
+--------------------------
+1. make repository public
+2. go to settings > pages > Build and deployment
+3. choose ghpages from branch option and save

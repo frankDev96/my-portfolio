@@ -1,45 +1,59 @@
+/* Container for the header */
 .header {
-    background-color: #222;
-    color: #fff;
-    padding: 20px 0;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-.header-content {
+/* Left part of the header containing the image and name */
+.header-left {
     display: flex;
     align-items: center;
 }
 
-.logo {
-    display: flex;
-    /* height: 50px; */
+/* Profile image styling */
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    border: 2px solid #6b56f0;
+    /* You can change the border color */
 }
 
-.navigation ul {
-    list-style: none;
+/* Styling for the name next to the image */
+.header-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+/* Navigation styling */
+.header-nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
 }
 
-.navigation li {
-    margin-left: 20px;
-}
-
-.navigation a {
+/* Navigation links */
+.header-nav ul li a {
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
 }
 
-.navigation a:hover {
-    color: #ffc107;
+.header-nav ul li a:hover {
+    color: #6b56f0;
+    /* Hover color for the links */
 }

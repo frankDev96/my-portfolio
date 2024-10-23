@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Stats from "./components/Stats/Stats";
 import Services from "./components/Services/Services";
+import SocialMenu from "./components/SocialMenu/SocialMenu";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       {/* </div> */}
       <main className="main">
         <section className="hero">
+          <SocialMenu />
           <div className="container">
             <div className="hero-content">
               <div className="hero-image">

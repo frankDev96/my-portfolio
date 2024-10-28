@@ -43,35 +43,37 @@ function App() {
         </section>
         <section className="services">
           <div className="container">
-            {/* <Services /> */}
-            <h2>Services</h2>
-            <div className="services-grid">
-              <div className="service">
-                <img src="/ux-ui-design.svg" alt="UX/UI Design" />
-                <h3>UX/UI Design</h3>
-                <p>
-                  A morbi felis libero sit sed. Orci duis nascetur orci mi
-                  cursus. Ante condimentum in elementum egestas nullam
-                  pellentesque olutpat.
-                </p>
-              </div>
-              <div className="service">
-                <img src="/product-design.svg " alt="Product Design" />
-                <h3>Product Design</h3>
-                <p>
-                  A morbi felis libero sit sed. Orci duis nascetur orci mi
-                  cursus. Ante condimentum in elementum egestas nullam
-                  pellentesque olutpat.
-                </p>
-              </div>
-              <div className="service">
-                <img src="/front-end-dev.svg" alt="Front-end Development" />
-                <h3>Front-end Development</h3>
-                <p>
-                  A morbi felis libero sit sed. Orci duis nascetur orci mi
-                  cursus. Ante condimentum in elementum egestas nullam
-                  pellentesque olutpat.
-                </p>
+            <div className="services-container">
+              {/* <Services /> */}
+              <h2>Services</h2>
+              <div className="services-grid">
+                <div className="service">
+                  <img src="/ux-ui-design.svg" alt="UX/UI Design" />
+                  <h3>UX/UI Design</h3>
+                  <p>
+                    A morbi felis libero sit sed. Orci duis nascetur orci mi
+                    cursus. Ante condimentum in elementum egestas nullam
+                    pellentesque olutpat.
+                  </p>
+                </div>
+                <div className="service">
+                  <img src="/product-design.svg " alt="Product Design" />
+                  <h3>Product Design</h3>
+                  <p>
+                    A morbi felis libero sit sed. Orci duis nascetur orci mi
+                    cursus. Ante condimentum in elementum egestas nullam
+                    pellentesque olutpat.
+                  </p>
+                </div>
+                <div className="service">
+                  <img src="/front-end-dev.svg" alt="Front-end Development" />
+                  <h3>Front-end Development</h3>
+                  <p>
+                    A morbi felis libero sit sed. Orci duis nascetur orci mi
+                    cursus. Ante condimentum in elementum egestas nullam
+                    pellentesque olutpat.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

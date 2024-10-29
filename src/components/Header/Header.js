@@ -1,6 +1,7 @@
-import React from 'react';
-import './Header.css'; // Importing the CSS file for styling
-import profileImg from '../../assets/images/me.jpg'; // Add a path to the profile image (if available)
+import React from "react";
+import "./Header.css";
+import profileImg from "../../assets/images/me.jpg";
+import { Link } from "react-scroll";
 
 function Header() {
   return (
@@ -11,10 +12,24 @@ function Header() {
       </div>
       <nav className="header-nav">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          {/* <Link to="home" smooth={true} duration={500} className="nav-link">
+            Home
+          </Link>
+          <Link to="about" smooth={true} duration={500} className="nav-link">
+            Home
+          </Link> */}
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>

@@ -4,20 +4,26 @@ import Header from "./components/Header/Header";
 import Stats from "./components/Stats/Stats";
 import Services from "./components/Services/Services";
 import SocialMenu from "./components/SocialMenu/SocialMenu";
+import HomeScreen from "./components/HomeScreen/HomeScreen";
+import AboutMe from "./components/AboutMe/AboutMe";
+import ProjectsList from "./components/ProjectsList/ProjectsList";
+import ContactPage from "./components/ContactPage/ContactPage";
 
 function App() {
   return (
     <div className="App">
-      {/* <div className="container"> */}
-      {/* <nav> */}
       <Header />
+      <SocialMenu />
+      <HomeScreen />
+      <AboutMe />
+      <ProjectsList />
+      <ContactPage />
       {/* </nav> */}
       {/* </div> */}
-      <main className="main">
-        <section className="hero">
-          <SocialMenu />
-          {/* <FloatingChatButton /> */}
-          <div className="container">
+      {/* <main className="main">
+        <section className="hero"> */}
+      {/* <FloatingChatButton /> */}
+      {/* <div className="container">
             <div className="hero-content">
               <div className="hero-image">
                 <img
@@ -33,9 +39,9 @@ function App() {
                   fringilla tempus suspendisse amet vitae amet lorem erat
                   fermentum. Amet eu quis mauris est diam eget nulla purus
                   ipsum. Lacinia accumsan enim amet.
-                </p>
-                <Stats />
-                <a href="/about" className="button">
+                </p> */}
+      {/* <Stats /> */}
+      {/* <a href="/about" className="button">
                   About Me
                 </a>
               </div>
@@ -45,7 +51,6 @@ function App() {
         <section className="services">
           <div className="container">
             <div className="services-container">
-              {/* <Services /> */}
               <h2>Services</h2>
               <div className="services-grid">
                 <div className="service">
@@ -78,8 +83,8 @@ function App() {
               </div>
             </div>
           </div>
-        </section>
-      </main>
+        </section> */}
+      {/* </main> */}
     </div>
   );
 }

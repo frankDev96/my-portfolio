@@ -3,7 +3,7 @@ import "./HomeScreen.css";
 
 function HomeScreen() {
   return (
-    <div className="home-screen">
+    <div id="home" className="home-screen">
       <h1 className="title">HEY, I'M FRANKLIN SAMUVEL</h1>
       <p className="subtitle">
         A Result-Oriented Front End Developer building and managing Websites and

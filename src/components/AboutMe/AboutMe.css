@@ -5,6 +5,7 @@
     padding: 50px 20px;
     text-align: center;
     font-family: Arial, sans-serif;
+    background-color: #ffffff;
 }
 
 .about-me-container h2 {
@@ -53,7 +54,7 @@
 .contact-button {
     padding: 10px 20px;
     font-size: 1rem;
-    color: #fff;
+    color: #ffffff;
     background-color: #7f3af5;
     border: none;
     border-radius: 5px;
@@ -91,4 +92,8 @@
     font-size: 0.9rem;
     color: #333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-about {
+    color: #5d2cb4;
 }

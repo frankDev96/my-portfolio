@@ -22,7 +22,7 @@ const ProjectsList = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-16">
+    <div id="projects" className="min-h-screen bg-gray-50 py-16">
       {/* Header Section */}
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">

@@ -3,8 +3,8 @@ import "./AboutMe.css";
 
 const AboutMe = () => {
   return (
-    <div className="about-me-container">
-      <h2>ABOUT ME</h2>
+    <div id="about" className="about-me-container">
+      <h2 className="header-about">ABOUT ME</h2>
       <p className="intro-text">
         Here you will find more information about me, what I do, and my current
         skills mostly in terms of programming and technology.

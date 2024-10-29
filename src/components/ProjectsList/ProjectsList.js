@@ -1,14 +1,15 @@
 import React from "react";
 import "./ProjectsList.css";
+import PortfolioItem from "../PortfolioItem/PortfolioItem";
 
 const ProjectsList = () => {
   // Sample projects data
   const projects = [
     {
       id: 1,
-      title: "Dopefolio",
+      title: "LILO - Fish, Meat, Vegetables",
       description:
-        "Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally",
+        "Lilo app is an innovative hyperlocal delivery app I developed, which has gained traction for its unique approach to neighborhood logistics. It has been highlighted on major tech sites and used by communities to connect local businesses with nearby customers, streamlining delivery and enhancing local shopping experiences.",
       image:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGif3TfqL1tdwXQDpwnLr83ysXe2vMpzFoIg&s",
       caseStudyLink: "#",
@@ -34,40 +35,13 @@ const ProjectsList = () => {
       </p>
 
       <div className="container mx-auto px-4">
-        {/* Projects Grid */}
         <div className="space-y-20">
-          {projects.map((project, index) => (
-            <div
-              key={project.id}
-              className={`flex flex-col lg:flex-row items-center gap-8 ${
-                index % 2 === 1 ? "lg:flex-row-reverse" : ""
-              }`}
-            >
-              {/* Project Image */}
-              <div className="w-full lg:w-1/2">
-                <div className="relative overflow-hidden rounded-lg shadow-lg">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-auto transform hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-              </div>
+          {
+            projects?.map((item) => {
+              return <PortfolioItem item={item} />
 
-              {/* Project Info */}
-              <div className="w-full lg:w-1/2 space-y-4">
-                <h3 className="text-2xl font-bold text-gray-900">
-                  {project.title}
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {project.description}
-                </p>
-                <button className="bg-purple-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors duration-300">
-                  CASE STUDY
-                </button>
-              </div>
-            </div>
-          ))}
+            })
+          }
         </div>
       </div>
     </div>

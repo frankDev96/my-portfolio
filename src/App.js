@@ -16,6 +16,7 @@ function App() {
       <main className="main">
         <section className="hero">
           <SocialMenu />
+          {/* <FloatingChatButton /> */}
           <div className="container">
             <div className="hero-content">
               <div className="hero-image">

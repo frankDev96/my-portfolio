@@ -1,4 +1,5 @@
 import React from "react";
+import "./ProjectsList.css";
 
 const ProjectsList = () => {
   // Sample projects data
@@ -8,7 +9,8 @@ const ProjectsList = () => {
       title: "Dopefolio",
       description:
         "Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally",
-      image: "/api/placeholder/800/500",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGif3TfqL1tdwXQDpwnLr83ysXe2vMpzFoIg&s",
       caseStudyLink: "#",
     },
     {
@@ -16,24 +18,22 @@ const ProjectsList = () => {
       title: "Wilsonport",
       description:
         "Wilsonport is a multiservice logistics and transport company and I created their website from scratch using the frontend tools I know.",
-      image: "/api/placeholder/800/500",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGif3TfqL1tdwXQDpwnLr83ysXe2vMpzFoIg&s",
       caseStudyLink: "#",
     },
   ];
 
   return (
-    <div id="projects" className="min-h-screen bg-gray-50 py-16">
+    <div id="projects" className="projects-container">
       {/* Header Section */}
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">PROJECTS</h1>
-          <div className="w-16 h-1 bg-purple-600 mx-auto mb-6"></div>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Here you will find some of the personal and clients projects that I
-            created with each project containing its own case study
-          </p>
-        </div>
+      <h2 className="header-projects">PROJECTS</h2>
+      <p className="intro-text">
+        Here you will find some of the personal and clients projects that I
+        created with each project containing its own case study.
+      </p>
 
+      <div className="container mx-auto px-4">
         {/* Projects Grid */}
         <div className="space-y-20">
           {projects.map((project, index) => (

@@ -1,5 +1,6 @@
 import React from "react";
 import "./AboutMe.css";
+import CommonButton from "../CommonButton/CommonButton";
 
 const AboutMe = () => {
   return (
@@ -31,7 +32,7 @@ const AboutMe = () => {
             matches my skills and experience then don't hesitate to{" "}
             <a href="#">contact</a> me.
           </p>
-          <button className="contact-button">CONTACT</button>
+          <CommonButton title={"CONTACT"} />
         </div>
         <div className="about-right">
           <h3>My Skills</h3>

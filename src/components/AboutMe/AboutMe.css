@@ -1,8 +1,7 @@
 /* Container for About Me Section */
 .about-me-container {
-    max-width: 1000px;
     margin: 0 auto;
-    padding: 50px 20px;
+    padding: 100px;
     text-align: center;
     font-family: Arial, sans-serif;
     background-color: #ffffff;

@@ -3,7 +3,7 @@ import "./ProjectsList.css";
 import PortfolioItem from "../../components/PortfolioItem/PortfolioItem";
 
 const ProjectsList = () => {
-  // Sample projects data
+
   const projects = [
     {
       id: 1,
@@ -25,7 +25,6 @@ const ProjectsList = () => {
 
   return (
     <div id="projects" className="projects-container">
-      {/* Header Section */}
       <h2 className="header-projects">PROJECTS</h2>
       <p className="intro-text">
         Here you will find some of the personal and clients projects that I

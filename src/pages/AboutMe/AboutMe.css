@@ -30,6 +30,7 @@
     display: flex;
     justify-content: space-between;
     gap: 150px;
+    align-items: flex-start;
 }
 
 /* Left Section */
@@ -118,4 +119,10 @@
     font-weight: 700;
     font-size: 2.8rem;
     margin-bottom: 3rem;
+}
+
+.button-me {
+    align-self: flex-start;
+    justify-content: center;
+    flex-direction: row;
 }

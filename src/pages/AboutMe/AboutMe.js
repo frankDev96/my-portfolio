@@ -38,7 +38,9 @@ const AboutMe = () => {
             matches my skills and experience then don't hesitate to{" "}
             <strong>contact</strong> me.
           </p>
-          <CommonButton title={"CONTACT"} />
+          <div className="button-me">
+            <CommonButton title={"CONTACT"} />
+          </div>
         </div>
         <div className="about-right">
           <h3>My Skills</h3>

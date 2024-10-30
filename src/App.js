@@ -7,7 +7,7 @@ import SocialMenu from "./components/SocialMenu/SocialMenu";
 import HomeScreen from "./pages/HomeScreen/HomeScreen";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import ProjectsList from "./pages/ProjectsList/ProjectsList";
-import ContactPage from "./pages/ContactPage/ContactPage";
+import ContactMe from "./pages/ContactMe/ContactMe";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
       <HomeScreen />
       <AboutMe />
       <ProjectsList />
-      <ContactPage />
+      <ContactMe />
     </div>
   );
 }

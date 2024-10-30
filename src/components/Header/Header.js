@@ -1,7 +1,6 @@
 import React from "react";
 import "./Header.css";
-import profileImg from "../../assets/images/me.jpg";
-import { Link } from "react-scroll";
+import profileImg from "../../assets/images/meone.jpg";
 
 function Header() {
   return (

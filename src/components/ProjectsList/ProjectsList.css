@@ -3,7 +3,9 @@
     padding: 100px;
     text-align: center;
     font-family: Arial, sans-serif;
-    /* background-color: #ffffff; */
+    background: linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(../../assets/svg/common-bg.svg);
+    background-size: cover;
+    background-position: center;
 }
 
 .projects-container h2 {
@@ -13,11 +15,24 @@
 }
 
 .header-projects {
-    color: #5d2cb4;
+    display: block;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    position: relative;
+    color: #111;
 }
 
 .intro-text {
+    display: block;
+    text-align: center;
+    color: #555;
     font-size: 1rem;
-    color: #666;
-    margin-bottom: 30px;
+    font-weight: 500;
+    max-width: 80rem;
+    margin: auto;
+    line-height: 1.6;
 }

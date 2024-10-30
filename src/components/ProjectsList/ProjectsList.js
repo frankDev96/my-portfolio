@@ -10,17 +10,15 @@ const ProjectsList = () => {
       title: "LILO - Fish, Meat, Vegetables",
       description:
         "Lilo app is an innovative hyperlocal delivery app I developed, which has gained traction for its unique approach to neighborhood logistics. It has been highlighted on major tech sites and used by communities to connect local businesses with nearby customers, streamlining delivery and enhancing local shopping experiences.",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGif3TfqL1tdwXQDpwnLr83ysXe2vMpzFoIg&s",
+      image: require("../../assets/images/lilo.png"),
       caseStudyLink: "#",
     },
     {
       id: 2,
-      title: "Wilsonport",
+      title: "الراعي - Al Raie",
       description:
-        "Wilsonport is a multiservice logistics and transport company and I created their website from scratch using the frontend tools I know.",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGif3TfqL1tdwXQDpwnLr83ysXe2vMpzFoIg&s",
+        "Developed an innovative mobile application for Al Raie, the first specialized platform catering to the needs of animal enthusiasts. The app provides services for a wide range of animals such as birds, sheep, camels, and horses, while also offering land supplies like tents and fire hoods. Designed to facilitate customer engagement, it allows users to easily search for, purchase, or sell animal-related products and wild necessities, streamlining the process through an intuitive interface and search functionalities.",
+      image: require("../../assets/images/alraie app.png"),
       caseStudyLink: "#",
     },
   ];
@@ -36,12 +34,9 @@ const ProjectsList = () => {
 
       <div className="container mx-auto px-4">
         <div className="space-y-20">
-          {
-            projects?.map((item) => {
-              return <PortfolioItem item={item} />
-
-            })
-          }
+          {projects?.map((item) => {
+            return <PortfolioItem item={item} />;
+          })}
         </div>
       </div>
     </div>

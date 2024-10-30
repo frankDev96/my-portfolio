@@ -1,6 +1,6 @@
 import React from "react";
 import "./HomeScreen.css";
-import CommonButton from "../CommonButton/CommonButton";
+import CommonButton from "../../components/CommonButton/CommonButton";
 
 function HomeScreen() {
   return (

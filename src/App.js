@@ -4,10 +4,10 @@ import Header from "./components/Header/Header";
 import Stats from "./components/Stats/Stats";
 import Services from "./components/Services/Services";
 import SocialMenu from "./components/SocialMenu/SocialMenu";
-import HomeScreen from "./components/HomeScreen/HomeScreen";
-import AboutMe from "./components/AboutMe/AboutMe";
-import ProjectsList from "./components/ProjectsList/ProjectsList";
-import ContactPage from "./components/ContactPage/ContactPage";
+import HomeScreen from "./pages/HomeScreen/HomeScreen";
+import AboutMe from "./pages/AboutMe/AboutMe";
+import ProjectsList from "./pages/ProjectsList/ProjectsList";
+import ContactPage from "./pages/ContactPage/ContactPage";
 
 function App() {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import "./ProjectsList.css";
-import PortfolioItem from "../PortfolioItem/PortfolioItem";
+import PortfolioItem from "../../components/PortfolioItem/PortfolioItem";
 
 const ProjectsList = () => {
   // Sample projects data

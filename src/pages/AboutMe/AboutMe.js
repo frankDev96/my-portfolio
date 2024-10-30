@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutMe.css";
-import CommonButton from "../CommonButton/CommonButton";
+import CommonButton from "../../components/CommonButton/CommonButton";
 
 const AboutMe = () => {
   return (

@@ -39,3 +39,7 @@
 .projects-button:hover {
     background-color: #5d2cb4;
 }
+
+.button {
+    align-items: flex-start;
+}

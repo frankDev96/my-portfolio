@@ -8,6 +8,7 @@ import HomeScreen from "./pages/HomeScreen/HomeScreen";
 import AboutMe from "./pages/AboutMe/AboutMe";
 import ProjectsList from "./pages/ProjectsList/ProjectsList";
 import ContactMe from "./pages/ContactMe/ContactMe";
+import ChatWidget from "./components/ChatWidget/ChatWidget";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <AboutMe />
       <ProjectsList />
       <ContactMe />
+      <ChatWidget />
     </div>
   );
 }

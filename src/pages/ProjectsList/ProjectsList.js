@@ -3,7 +3,6 @@ import "./ProjectsList.css";
 import PortfolioItem from "../../components/PortfolioItem/PortfolioItem";
 
 const ProjectsList = () => {
-
   const projects = [
     {
       id: 1,
@@ -15,7 +14,7 @@ const ProjectsList = () => {
     },
     {
       id: 2,
-      title: "الراعي - Al Raie",
+      title: "Al Raie",
       description:
         "Developed an innovative mobile application for Al Raie, the first specialized platform catering to the needs of animal enthusiasts. The app provides services for a wide range of animals such as birds, sheep, camels, and horses, while also offering land supplies like tents and fire hoods. Designed to facilitate customer engagement, it allows users to easily search for, purchase, or sell animal-related products and wild necessities, streamlining the process through an intuitive interface and search functionalities.",
       image: require("../../assets/images/alraie app.png"),
@@ -27,16 +26,14 @@ const ProjectsList = () => {
     <div id="projects" className="projects-container">
       <h2 className="header-projects">PROJECTS</h2>
       <p className="intro-text">
-        Here you will find some of the personal and clients projects that I
-        created with each project containing its own case study.
+        Here you will find some of the personal and client projects that I
+        created, each with its own case study.
       </p>
 
-      <div className="container mx-auto px-4">
-        <div className="space-y-20">
-          {projects?.map((item) => {
-            return <PortfolioItem item={item} />;
-          })}
-        </div>
+      <div className="projects-list">
+        {projects.map((item) => (
+          <PortfolioItem key={item.id} item={item} />
+        ))}
       </div>
     </div>
   );

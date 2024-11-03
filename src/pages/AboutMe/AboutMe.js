@@ -4,7 +4,7 @@ import CommonButton from "../../components/CommonButton/CommonButton";
 
 const AboutMe = () => {
   return (
-    <div id="about" className="about-me-container">
+    <section id="about" className="about-me-container">
       <h2 className="header-about">ABOUT ME</h2>
       <p className="intro-text">
         Here you will find more information about me, what I do, and my current
@@ -58,7 +58,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

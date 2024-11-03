@@ -16,7 +16,9 @@ const PortfolioItem = ({ item }) => {
                     <p className="project-description">
                         {item?.description}
                     </p>
-                    <CommonButton title={"Case Study"} />
+                    <div key={item.id} className="project-item">
+                        <CommonButton title={"Case Study"} />
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Stats from "./components/Stats/Stats";
@@ -11,15 +11,24 @@ import ContactMe from "./pages/ContactMe/ContactMe";
 import ChatWidget from "./components/ChatWidget/ChatWidget";
 
 function App() {
+  const projectsRef = useRef(null);
+
+  // Function to scroll to ProjectsList section
+  const scrollToProjects = () => {
+    projectsRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="App">
       <Header />
       <SocialMenu />
-      <HomeScreen />
+      <HomeScreen scrollToProjects={scrollToProjects} />
       <AboutMe />
-      <ProjectsList />
-      <ContactMe />
-      <ChatWidget />
+      <div ref={projectsRef}>
+        <ProjectsList ref={projectsRef} />
+      </div>
+      {/* <ContactMe />
+      <ChatWidget /> */}
     </div>
   );
 }

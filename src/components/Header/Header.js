@@ -26,9 +26,9 @@ function Header() {
           <li>
             <a href="#projects">Projects</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#contactMe">Contact</a>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>

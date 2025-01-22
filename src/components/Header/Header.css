@@ -23,7 +23,7 @@
     height: 33px;
     border-radius: 50%;
     margin-right: 1rem;
-    border: 2px solid #6b56f0;
+    border: 2px solid #33ffce;
     /* You can change the border color */
 }
 
@@ -54,6 +54,6 @@
 }
 
 .header-nav ul li a:hover {
-    color: #6b56f0;
+    color: #33ffce;
     /* Hover color for the links */
 }

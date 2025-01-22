@@ -1,0 +1,56 @@
+/* CSS Variables for colors */
+:root {
+    --main-bg-color: #fafafa;
+    --header-color: #111;
+    --text-color: #555;
+    --accent-color: #33ffce;
+    --accent-hover-color: #5d2cb4;
+    --button-bg-color: #6a0dad;
+    --button-hover-bg-color: #5a00bd;
+}
+
+/* Container for Contact Me Section */
+.contact-me-container {
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: var(--main-bg-color);
+}
+
+.header-contact {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--header-color);
+    margin-bottom: 2rem;
+}
+
+.intro-text {
+    color: var(--text-color);
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-contact {
+        font-size: 2rem;
+    }
+
+    .intro-text {
+        font-size: 0.9rem;
+    }
+}

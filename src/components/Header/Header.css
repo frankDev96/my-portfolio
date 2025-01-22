@@ -1,0 +1,59 @@
+/* Container for the header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 2em;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Left part of the header containing the image and name */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Profile image styling */
+.profile-img {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    border: 2px solid #33ffce;
+    /* You can change the border color */
+}
+
+/* Styling for the name next to the image */
+.header-name {
+    font-size: .9rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+/* Navigation styling */
+.header-nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation links */
+.header-nav ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.header-nav ul li a:hover {
+    color: #33ffce;
+    /* Hover color for the links */
+}

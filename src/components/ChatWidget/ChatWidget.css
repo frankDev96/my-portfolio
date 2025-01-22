@@ -1,0 +1,130 @@
+/* Main container */
+.chat-widget-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 1000;
+}
+
+/* Chat button (minimized state) */
+.chat-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background-color: white;
+    color: black;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.chat-button img.emoji {
+    width: 20px;
+    height: 20px;
+}
+
+/* Hide chat button when window is open */
+.hidden {
+    display: none;
+}
+
+/* Chat window (expanded state) */
+.chat-window {
+    position: relative;
+    width: 320px;
+    background: #6236ff;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+}
+
+/* Header of the chat window */
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    width: 24px;
+    /* Reduced width for dropdown */
+    height: 24px;
+}
+
+/* Body of the chat window */
+.chat-body {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.reply-status {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    background-color: green;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+/* Footer with input box and send button */
+.chat-footer {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 8px;
+    border-radius: 8px;
+    color: black;
+    margin-top: 10px;
+}
+
+.chat-input, .chat-textarea {
+    flex: 1;
+    border: none;
+    padding: 8px;
+    outline: none;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-right: 8px;
+}
+
+.chat-textarea {
+    resize: none;
+}
+
+.send-btn {
+    background: #6236ff;
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.send-btn svg {
+    width: 18px;
+    height: 18px;
+}

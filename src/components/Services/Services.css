@@ -1,0 +1,141 @@
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.services-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.services-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.slide-content {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+}
+
+.slide {
+    min-width: 100%;
+    padding: 30px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.slide.active {
+    opacity: 1;
+    transform: translateX(0);
+    position: relative;
+}
+
+.slide h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.slide p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.slide .icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-top: 20px;
+}
+
+.prev-btn,
+.next-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease;
+    z-index: 1;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-title {
+        font-size: 2rem;
+    }
+
+    .slide {
+        padding: 20px;
+    }
+
+    .slide h3 {
+        font-size: 1.5rem;
+    }
+
+    .slide p {
+        font-size: 0.9rem;
+    }
+
+    .prev-btn,
+    .next-btn {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-title {
+        font-size: 1.8rem;
+    }
+
+    .slide {
+        padding: 15px;
+    }
+
+    .slide h3 {
+        font-size: 1.3rem;
+    }
+
+    .prev-btn,
+    .next-btn {
+        width: 30px;
+        height: 30px;
+    }
+}

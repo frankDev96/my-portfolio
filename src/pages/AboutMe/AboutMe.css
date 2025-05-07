@@ -53,7 +53,7 @@
 }
 
 .about-left a {
-    color: #33ffce;
+    color: #00208a;
     text-decoration: none;
 }
 
@@ -61,7 +61,7 @@
     padding: 10px 20px;
     font-size: 1rem;
     color: #ffffff;
-    background-color: #33ffce;
+    background-color: #00208a;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -69,7 +69,7 @@
 }
 
 .contact-button:hover {
-    background-color: #5d2cb4;
+    background-color: #001a6e;
 }
 
 /* Right Section */

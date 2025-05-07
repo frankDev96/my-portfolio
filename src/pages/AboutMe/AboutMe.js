@@ -1,17 +1,18 @@
 import React from "react";
 import "./AboutMe.css";
+import "../../styles/animations.css";
 import CommonButton from "../../components/CommonButton/CommonButton";
 
 const AboutMe = () => {
   return (
-    <section id="about" className="about-me-container">
-      <h2 className="header-about">ABOUT ME</h2>
-      <p className="intro-text">
+    <section id="about" className="about-me-container fade-in">
+      <h2 className="header-about slide-up">ABOUT ME</h2>
+      <p className="intro-text slide-up">
         Here you will find more information about me, what I do, and my current
         skills mostly in terms of programming and technology.
       </p>
       <div className="about-content">
-        <div className="about-left">
+        <div className="about-left scale-in">
           <h3 className="get-to-know">Get to know me!</h3>
           <p>
             I'm a <strong>Frontend Focused Developer</strong> building and
@@ -38,23 +39,23 @@ const AboutMe = () => {
             matches my skills and experience then don't hesitate to{" "}
             <strong>contact</strong> me.
           </p>
-          <div className="button-me">
-            <CommonButton title={"CONTACT"} />
+          <div className="button-me scale-in">
+            <CommonButton title={"CONTACT"} className="hover-lift" />
           </div>
         </div>
-        <div className="about-right">
+        <div className="about-right slide-up">
           <h3>My Skills</h3>
           <div className="skills">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>React</span>
-            <span>React Native</span>
-            <span>GIT</span>
-            <span>Github</span>
-            <span>Responsive Design</span>
-            <span>REST</span>
-            <span>Graphql</span>
+            <span className="skill-tag" style={{ "--delay": 1 }}>HTML</span>
+            <span className="skill-tag" style={{ "--delay": 2 }}>CSS</span>
+            <span className="skill-tag" style={{ "--delay": 3 }}>JavaScript</span>
+            <span className="skill-tag" style={{ "--delay": 4 }}>React</span>
+            <span className="skill-tag" style={{ "--delay": 5 }}>React Native</span>
+            <span className="skill-tag" style={{ "--delay": 6 }}>GIT</span>
+            <span className="skill-tag" style={{ "--delay": 7 }}>Github</span>
+            <span className="skill-tag" style={{ "--delay": 8 }}>Responsive Design</span>
+            <span className="skill-tag" style={{ "--delay": 9 }}>REST</span>
+            <span className="skill-tag" style={{ "--delay": 10 }}>Graphql</span>
           </div>
         </div>
       </div>

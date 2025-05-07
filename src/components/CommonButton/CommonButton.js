@@ -1,9 +1,9 @@
 import React from "react";
 import "./CommonButton.css";
 
-const CommonButton = ({ onClick, title }) => {
+const CommonButton = ({ onClick, title, className }) => {
   return (
-    <button className="contact-button" onClick={onClick}>
+    <button className={`contact-button ${className || ''}`} onClick={onClick}>
       {title}
     </button>
   );

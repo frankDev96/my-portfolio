@@ -3,7 +3,7 @@
     /* Increased padding for a larger button */
     font-size: 1rem;
     color: #ffffff;
-    background-color: #33ffce;
+    background-color: #00208a;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -14,5 +14,6 @@
 }
 
 .contact-button:hover {
-    background-color: #5d2cb4;
+    background-color: #00208a;
+    ;
 }

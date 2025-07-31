@@ -8,18 +8,20 @@
     background: #f3f3f3;
     text-align: center;
     font-family: Arial, sans-serif;
+    padding: 0 20px;
 }
 
 .home-screen h1 {
     font-size: 2.5rem;
     font-weight: bold;
     color: #333;
+    margin-bottom: 1.5rem;
 }
 
 .home-screen p {
     font-size: 1.2rem;
     color: #666;
-    margin-top: 10px;
+    margin: 1.5rem auto;
     max-width: 600px;
     line-height: 1.5;
 }
@@ -42,4 +44,37 @@
 
 .button {
     align-items: flex-start;
+    margin-top: 2rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .home-screen h1 {
+        font-size: 2rem;
+    }
+
+    .home-screen p {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-screen {
+        padding: 0 15px;
+    }
+
+    .home-screen h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-screen p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .projects-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
 }

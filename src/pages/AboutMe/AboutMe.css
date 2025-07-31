@@ -1,11 +1,10 @@
 /* Container for About Me Section */
 .about-me-container {
     margin: 0 auto;
-    padding: 100px;
+    padding: 100px 20px;
     text-align: center;
     font-family: Arial, sans-serif;
     background: #fafafa;
-    padding-bottom: 150px;
 }
 
 .about-me-container h2 {
@@ -23,14 +22,17 @@
     max-width: 80rem;
     margin: auto;
     line-height: 1.6;
+    padding: 0 20px;
 }
 
 /* Content Section */
 .about-content {
     display: flex;
     justify-content: space-between;
-    gap: 150px;
+    gap: 50px;
     align-items: flex-start;
+    padding: 0 20px;
+    margin-top: 50px;
 }
 
 /* Left Section */
@@ -57,21 +59,6 @@
     text-decoration: none;
 }
 
-.contact-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #ffffff;
-    background-color: #00208a;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.contact-button:hover {
-    background-color: #001a6e;
-}
-
 /* Right Section */
 .about-right {
     flex: 0.8;
@@ -93,10 +80,8 @@
 }
 
 .skills span {
-    padding: 1rem 1rem;
-    margin-bottom: 0.5rem;
-    margin-right: 0.5rem;
-    font-size: .8rem;
+    padding: 0.8rem;
+    font-size: 0.8rem;
     background: rgba(153, 153, 153, 0.2);
     border-radius: 5px;
     font-weight: 600;
@@ -104,14 +89,11 @@
 }
 
 .header-about {
-    display: block;
     font-size: 4rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
     letter-spacing: 3px;
     text-align: center;
     margin-bottom: 3.5rem;
-    position: relative;
     color: #111;
 }
 
@@ -125,4 +107,76 @@
     align-self: flex-start;
     justify-content: center;
     flex-direction: row;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .about-content {
+        gap: 30px;
+    }
+
+    .header-about {
+        font-size: 3rem;
+    }
+
+    .get-to-know {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-me-container {
+        padding: 60px 15px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-right {
+        width: 100%;
+    }
+
+    .header-about {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .get-to-know {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .skills span {
+        padding: 0.6rem;
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-me-container {
+        padding: 40px 10px;
+    }
+
+    .header-about {
+        font-size: 2rem;
+    }
+
+    .get-to-know {
+        font-size: 1.8rem;
+    }
+
+    .about-left p {
+        font-size: 0.9rem;
+    }
+
+    .skills {
+        gap: 8px;
+    }
+
+    .skills span {
+        padding: 0.5rem;
+        font-size: 0.7rem;
+    }
 }

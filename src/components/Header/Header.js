@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 import profileImg from "../../assets/images/meone.jpg";
 
 function Header() {
@@ -11,14 +12,8 @@ function Header() {
       </div>
       <nav className="header-nav">
         <ul>
-          {/* <Link to="home" smooth={true} duration={500} className="nav-link">
-            Home
-          </Link>
-          <Link to="about" smooth={true} duration={500} className="nav-link">
-            Home
-          </Link> */}
           <li>
-            <a href="#home">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <a href="#about">About</a>
@@ -26,9 +21,6 @@ function Header() {
           <li>
             <a href="#projects">Projects</a>
           </li>
-          {/* <li>
-            <a href="#contactMe">Contact</a>
-          </li> */}
         </ul>
       </nav>
     </header>

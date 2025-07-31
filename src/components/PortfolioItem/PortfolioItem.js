@@ -3,7 +3,8 @@ import './PortfolioItem.css';
 import '../../styles/animations.css';
 import CommonButton from '../CommonButton/CommonButton';
 
-const PortfolioItem = ({ item }) => {
+const PortfolioItem = ({ item, onClick = () => { } }) => {
+
     return (
         <div className="portfolio-container fade-in">
             <div className="project-container hover-lift">
@@ -14,14 +15,12 @@ const PortfolioItem = ({ item }) => {
                 />
                 <div className="project-details slide-up">
                     <h2 className="project-title">{item?.title}</h2>
-                    <p className="project-description">
-                        {item?.description}
-                    </p>
-                    <div key={item.id} className="project-item">
+                    <p className="project-description">{item?.description}</p>
+                    <div className="project-item">
                         <CommonButton
-                            title={"Case Study"}
+                            title="Case Study"
                             className="hover-lift"
-                            onClick={() => window.open(item?.link, '_blank')}
+                            onClick={onClick}
                         />
                     </div>
                 </div>

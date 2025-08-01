@@ -4,10 +4,12 @@ import { projects } from '../../utils/constants';
 import CommonButton from '../../components/CommonButton/CommonButton';
 import './CaseStudyDetails.css';
 
-const CaseStudyDetails = () => {
-    const { id } = useParams();
+interface CaseStudyDetailsProps { }
+
+const CaseStudyDetails: React.FC<CaseStudyDetailsProps> = () => {
+    const { id } = useParams<{ id: string }>();
     const navigate = useNavigate();
-    const project = projects.find(p => p.id === parseInt(id));
+    const project = projects.find(p => p.id === parseInt(id || "0"));
 
     if (!project) {
         return <div className="not-found">Project not found</div>;

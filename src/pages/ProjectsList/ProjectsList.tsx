@@ -1,12 +1,16 @@
 import React from "react";
 import "./ProjectsList.css";
 import PortfolioItem from "../../components/PortfolioItem/PortfolioItem";
-import { projects } from '../../utils/constants'
+import { projects } from '../../utils/constants';
 import { useNavigate } from "react-router-dom";
+import { Project } from "../../types";
 
-const ProjectsList = () => {
+interface ProjectsListProps { }
+
+const ProjectsList: React.FC<ProjectsListProps> = () => {
   const navigate = useNavigate();
-  const handleNavigate = (item) => {
+
+  const handleNavigate = (item: Project) => {
     if (item?.id) {
       navigate(`/case-study/${item.id}`);
     }

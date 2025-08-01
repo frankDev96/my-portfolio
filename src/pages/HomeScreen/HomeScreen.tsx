@@ -1,10 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./HomeScreen.css";
 import "../../styles/animations.css";
 import CommonButton from "../../components/CommonButton/CommonButton";
 
-function HomeScreen({ scrollToProjects }) {
+interface HomeScreenProps {
+  scrollToProjects: () => void;
+}
 
+const HomeScreen: React.FC<HomeScreenProps> = ({ scrollToProjects }) => {
   return (
     <div id="home" className="home-screen">
       <h1 className="title fade-in">HEY, I'M FRANKLIN SAMUVEL</h1>

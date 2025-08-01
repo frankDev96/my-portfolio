@@ -1,10 +1,18 @@
 import React, { useState } from "react";
 import "./Services.css"; // Import the CSS file
 
-const Services = () => {
-  const [activeSlide, setActiveSlide] = useState(0);
+interface ServiceProps { }
 
-  const slides = [
+interface Service {
+  title: string;
+  icon: string;
+  description: string;
+}
+
+const Services: React.FC<ServiceProps> = () => {
+  const [activeSlide, setActiveSlide] = useState<number>(0);
+
+  const slides: Service[] = [
     {
       title: "UX/UI Design",
       icon: "💻",
@@ -25,13 +33,13 @@ const Services = () => {
     },
   ];
 
-  const handlePrev = () => {
+  const handlePrev = (): void => {
     setActiveSlide((prevSlide) =>
       prevSlide === 0 ? slides.length - 1 : prevSlide - 1
     );
   };
 
-  const handleNext = () => {
+  const handleNext = (): void => {
     setActiveSlide((prevSlide) =>
       prevSlide === slides.length - 1 ? 0 : prevSlide + 1
     );

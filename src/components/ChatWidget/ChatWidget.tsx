@@ -1,28 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, ChangeEvent } from "react";
 import "./ChatWidget.css";
 
-const ChatWidget = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isExpanded, setIsExpanded] = useState(false); // Track if input should be a textarea
-  const [message, setMessage] = useState(""); // Track message input
+interface ChatWidgetProps { }
 
-  const toggleChat = () => {
+const ChatWidget: React.FC<ChatWidgetProps> = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isExpanded, setIsExpanded] = useState<boolean>(false); // Track if input should be a textarea
+  const [message, setMessage] = useState<string>(""); // Track message input
+
+  const toggleChat = (): void => {
     setIsOpen(!isOpen);
     setIsExpanded(false); // Reset expanded state when closing
   };
 
-  const toggleExpanded = () => {
+  const toggleExpanded = (): void => {
     setIsExpanded(!isExpanded);
   };
 
-  const handleInputKeyDown = (e) => {
+  const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>): void => {
     if (e.key === "Enter") {
       e.preventDefault();
       setIsExpanded(true); // Switch to textarea mode
     }
   };
 
-  const handleMessageChange = (e) => {
+  const handleMessageChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
     setMessage(e.target.value);
   };
 
@@ -72,7 +74,7 @@ const ChatWidget = () => {
                 value={message}
                 onChange={handleMessageChange}
                 placeholder="Enter your message..."
-                rows="2"
+                rows={2}
                 className="chat-textarea"
               ></textarea>
             ) : (

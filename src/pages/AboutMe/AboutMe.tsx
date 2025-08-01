@@ -3,7 +3,9 @@ import "./AboutMe.css";
 import "../../styles/animations.css";
 import CommonButton from "../../components/CommonButton/CommonButton";
 
-const AboutMe = () => {
+interface AboutMeProps { }
+
+const AboutMe: React.FC<AboutMeProps> = () => {
   return (
     <section id="about" className="about-me-container fade-in">
       <h2 className="header-about slide-up">ABOUT ME</h2>
@@ -46,16 +48,16 @@ const AboutMe = () => {
         <div className="about-right slide-up">
           <h3>My Skills</h3>
           <div className="skills">
-            <span className="skill-tag" style={{ "--delay": 1 }}>HTML</span>
-            <span className="skill-tag" style={{ "--delay": 2 }}>CSS</span>
-            <span className="skill-tag" style={{ "--delay": 3 }}>JavaScript</span>
-            <span className="skill-tag" style={{ "--delay": 4 }}>React</span>
-            <span className="skill-tag" style={{ "--delay": 5 }}>React Native</span>
-            <span className="skill-tag" style={{ "--delay": 6 }}>GIT</span>
-            <span className="skill-tag" style={{ "--delay": 7 }}>Github</span>
-            <span className="skill-tag" style={{ "--delay": 8 }}>Responsive Design</span>
-            <span className="skill-tag" style={{ "--delay": 9 }}>REST</span>
-            <span className="skill-tag" style={{ "--delay": 10 }}>Graphql</span>
+            <span className="skill-tag" style={{ "--delay": "1" } as React.CSSProperties}>HTML</span>
+            <span className="skill-tag" style={{ "--delay": "2" } as React.CSSProperties}>CSS</span>
+            <span className="skill-tag" style={{ "--delay": "3" } as React.CSSProperties}>JavaScript</span>
+            <span className="skill-tag" style={{ "--delay": "4" } as React.CSSProperties}>React</span>
+            <span className="skill-tag" style={{ "--delay": "5" } as React.CSSProperties}>React Native</span>
+            <span className="skill-tag" style={{ "--delay": "6" } as React.CSSProperties}>GIT</span>
+            <span className="skill-tag" style={{ "--delay": "7" } as React.CSSProperties}>Github</span>
+            <span className="skill-tag" style={{ "--delay": "8" } as React.CSSProperties}>Responsive Design</span>
+            <span className="skill-tag" style={{ "--delay": "9" } as React.CSSProperties}>REST</span>
+            <span className="skill-tag" style={{ "--delay": "10" } as React.CSSProperties}>Graphql</span>
           </div>
         </div>
       </div>

@@ -1,9 +1,12 @@
 import React from "react";
 import "./Header.css";
 import { Link } from "react-router-dom";
+// @ts-ignore
 import profileImg from "../../assets/images/meone.jpg";
 
-function Header() {
+interface HeaderProps { }
+
+const Header: React.FC<HeaderProps> = () => {
   return (
     <header className="header">
       <div className="header-left">

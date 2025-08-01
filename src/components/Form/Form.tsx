@@ -1,14 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, ChangeEvent, FormEvent } from "react";
 import "./Form.css";
 
-const Form = () => {
-  const [formData, setFormData] = useState({
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
+interface FormProps { }
+
+const Form: React.FC<FormProps> = () => {
+  const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
     message: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
       ...prevData,
@@ -16,7 +24,7 @@ const Form = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form Submitted", formData);
     // Handle form submission (e.g., send data to a server)

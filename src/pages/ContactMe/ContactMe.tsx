@@ -2,7 +2,9 @@ import React from "react";
 import "./ContactMe.css";
 import Form from "../../components/Form/Form";
 
-const ContactMe = () => {
+interface ContactMeProps { }
+
+const ContactMe: React.FC<ContactMeProps> = () => {
   return (
     <div id="contactMe" className="contact-me-container">
       <h2 className="header-contact">Contact Me</h2>

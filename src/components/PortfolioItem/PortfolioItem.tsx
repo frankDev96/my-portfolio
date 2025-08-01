@@ -2,9 +2,14 @@ import React from 'react';
 import './PortfolioItem.css';
 import '../../styles/animations.css';
 import CommonButton from '../CommonButton/CommonButton';
+import { Project } from '../../types';
 
-const PortfolioItem = ({ item, onClick = () => { } }) => {
+interface PortfolioItemProps {
+    item: Project;
+    onClick?: () => void;
+}
 
+const PortfolioItem: React.FC<PortfolioItemProps> = ({ item, onClick = () => { } }) => {
     return (
         <div className="portfolio-container fade-in">
             <div className="project-container hover-lift">

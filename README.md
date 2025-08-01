@@ -1,43 +1,108 @@
-# Getting Started with Create React App
+# React Portfolio Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive and modern portfolio website built with React and TypeScript, showcasing projects, skills, and professional information.
 
-## Available Scripts
+## Project Structure
 
-In the project directory, you can run:
+The application is structured as follows:
 
-### `npm start`
+```
+src/
+├── components/         # Reusable UI components
+├── pages/              # Main page components
+├── screens/            # Additional screen components
+├── styles/             # Global styles and animations
+├── types/              # TypeScript type definitions
+├── utils/              # Utility functions and constants
+├── App.tsx             # Main application component
+└── index.tsx           # Entry point
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Fully responsive design that works well on desktop, tablet, and mobile devices
+- TypeScript integration with full type safety
+- React Router for navigation between sections
+- Animations for enhanced user experience
+- Project showcase with case study details
+- Skills and experience display
+- Contact form
+- 404 Page handling
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React 18
+- TypeScript 4.9+
+- React Router v6
+- CSS with custom properties for theming
+- CSS Animations
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js 14.0 or later
+- npm 6.0 or later
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/my-portfolio.git
+cd my-portfolio
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Install dependencies
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Run the development server
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The application will open in your browser at `http://localhost:3000/my-portfolio`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## TypeScript Integration
+
+This project has been fully converted to TypeScript, providing:
+
+- Type definitions for all components and props
+- Interface definitions for data structures
+- Type safety for function parameters and returns
+- Module declarations for importing non-TS assets
+
+## Routing
+
+The application uses React Router v6 for navigation:
+
+- `/` - Home page
+- `/about` - About Me page
+- `/projects` - Projects list
+- `/case-study/:id` - Individual project case study
+- `/skills` - Skills page
+- `/resume` - Resume page
+- `/contact` - Contact page
+- `*` - 404 Not Found page
+
+## Building and Deployment
+
+To build the application for production:
+
+```bash
+npm run build
+```
+
+This creates optimized files in the `build` folder that are ready for deployment.
+
+## Future Enhancements
+
+- Dark/Light theme toggle
+- Internationalization support
+- Blog section
+- Backend integration for the contact form
+- Unit tests for components
 
 ## Learn More
 
